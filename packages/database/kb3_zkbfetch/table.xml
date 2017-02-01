@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb3>
+  <name>kb3_zkbfetch</name>
+  <rows>0</rows>
+  <structure>CREATE TABLE `kb3_zkbfetch` (
+  `fetchID` int(11) NOT NULL auto_increment,
+  `url` varchar(127) NOT NULL,
+  `lastKillTimestamp` datetime default NULL,
+  PRIMARY KEY (`fetchID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;</structure>
+</kb3>

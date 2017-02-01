@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kb3>
+  <name>kb3_item_locations</name>
+  <rows>153</rows>
+  <structure>CREATE TABLE `kb3_item_locations` (
+  `itl_flagID` smallint(6) NOT NULL,
+  `itl_flagName` varchar(200) DEFAULT NULL,
+  `itl_flagText` varchar(100) DEFAULT NULL,
+  `itl_orderID` int(11) DEFAULT NULL,
+  `itl_icon` varchar(10) NOT NULL DEFAULT '03_14',
+  PRIMARY KEY (`itl_flagID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</structure>
+</kb3>

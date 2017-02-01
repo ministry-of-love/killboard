@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kb3>
+  <name>kb3_invtypes</name>
+  <rows>31280</rows>
+  <structure>CREATE TABLE `kb3_invtypes` (
+  `typeID` int(11) NOT NULL DEFAULT '0',
+  `groupID` int(11) NOT NULL DEFAULT '0',
+  `typeName` char(100) NOT NULL,
+  `icon` char(5) DEFAULT NULL,
+  `description` text NOT NULL,
+  `mass` float NOT NULL DEFAULT '0',
+  `volume` float NOT NULL DEFAULT '0',
+  `capacity` float NOT NULL DEFAULT '0',
+  `portionSize` int(11) NOT NULL DEFAULT '1',
+  `raceID` int(11) DEFAULT NULL,
+  `basePrice` float NOT NULL DEFAULT '0',
+  `marketGroupID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`typeID`),
+  KEY `groupID` (`groupID`),
+  KEY `marketGroupID` (`marketGroupID`),
+  KEY `typeName` (`typeName`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8</structure>
+</kb3>
